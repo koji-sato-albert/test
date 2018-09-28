@@ -8,7 +8,7 @@ WORKDIR /app
 ADD . /app
 
 # requirements.txt で指定された必要なパッケージを全てインストール
-RUN pip install -r requirements.txt
+RUN pip install -r ./master\kojisato\test_dockerrequirements.txt
 
 # ポート 80 番をコンテナの外の世界でも利用可能に
 EXPOSE 80
